@@ -16,7 +16,7 @@ func main(){
 	err = task2.FindCommonWords("../task_2/files/result.txt", "../task_2/files/t1", "../task_2/files/t2", "../task_2/files/t3")
 	fmt.Println(err)
 
-	a, b, rc := task1.FilterCommomDigits(1234, 498124)
+	a, b, rc := task1.FilterCommonDigits(1234, 498124)
 	fmt.Println(a, b, rc)
 
 }
