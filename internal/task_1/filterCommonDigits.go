@@ -31,7 +31,7 @@ func CreateNewDigit(a int, len int, arr_1 []int, arr_2 []int) int {
 }
 
 func FilterCommonDigits(a, b int) (int, int, error){
-	if a <= 0 || b < 0 {
+	if a < 0 || b < 0 {
 		return 0, 0, ErrNegNums
 	}
 
@@ -46,7 +46,7 @@ func FilterCommonDigits(a, b int) (int, int, error){
 	new_a = CreateNewDigit(a, len_a, arr_digits_a, arr_digits_b)
 	new_b = CreateNewDigit(b, len_b, arr_digits_a, arr_digits_b)
 
-	if new_a * new_b == 0 {
+	if new_a * new_b == 0 && a != 0 && b != 0{
 		return 0, 0, ErrEmptyNum
 	}
 
