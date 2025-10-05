@@ -9,11 +9,11 @@ import (
 
 func main(){
 
-	slice := []int{1, 2, 3}
-	err := task3.ScaleSlice(&slice, 3)
-	fmt.Println(slice, err)
+	// slice := []int{}
+	err := task3.ScaleSlice(nil, 5)
+	fmt.Println(err)
 
-	err = task2.FindCommonWords("../task_2/files/result.txt", "../task_2/files/t1", "../task_2/files/t2", "../task_2/files/t3")
+	err = task2.FindCommonWords("../internal/task_2/files/result.txt", "../internal/task_2/files/t1", "../internal/task_2/files/t2", "../internal/task_2/files/t3")
 	fmt.Println(err)
 
 	a, b, rc := task1.FilterCommonDigits(1234, 498124)

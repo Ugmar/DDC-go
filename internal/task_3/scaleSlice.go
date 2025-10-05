@@ -1,7 +1,12 @@
 package task3
 
+import "math"
+
 func ScaleSlice(slice *[]int, scaleFactor uint32) error{
-	if scaleFactor * uint32(len(*slice)) < uint32(len(*slice)){
+	if slice == nil{
+		return nil
+	}
+	if uint64(scaleFactor) * uint64(len(*slice)) > math.MaxUint32{
 		return ErrOverflow
 	}
 
