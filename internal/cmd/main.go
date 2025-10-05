@@ -3,10 +3,14 @@ package main
 import (
 	"fmt"
 	// "dz1/task_1"
-	"dz1/task_2"
+	// "dz1/task_2"
+	"dz1/task_3"
 )
 
 func main(){
-	rc := task2.FindCommonWords("result", "../task_2/files/t1", "../task_2/files/t2", "../task_2/files/t3")
-	fmt.Println(rc)
+	slice := []int{1, 2, 3}
+
+		// When
+	err := task3.ScaleSlice(&slice, 3)
+	fmt.Println(slice, err)
 }
