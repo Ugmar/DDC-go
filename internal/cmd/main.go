@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
-	"dz1/task_1"
-	"dz1/task_2"
-	"dz1/task_3"
+	"dz1/internal/task_1"
+	"dz1/internal/task_2"
+	"dz1/internal/task_3"
 )
 
 func main(){
