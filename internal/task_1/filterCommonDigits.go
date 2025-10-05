@@ -30,7 +30,7 @@ func CreateNewDigit(a int, len int, arr_1 []int, arr_2 []int) int {
 	return x / 10
 }
 
-func FilterCommomDigits(a, b int) (int, int, error){
+func FilterCommonDigits(a, b int) (int, int, error){
 	if a <= 0 || b <= 0 {
 		return 0, 0, ErrNegNums
 	}
